@@ -1,2 +1,16 @@
+buildscript {
+    dependencyResolutionManagement {
+        repositories {
+            mavenCentral()
+
+            maven { url = 'https://maven.elmakers.com/repository/' }
+            maven { url = 'https://jitpack.io/' }
+
+            maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+            maven { url = 'https://repo.unnamed.team/repository/unnamed-public/' }
+        }
+    }
+}
+
 rootProject.name = 'Omni'
 

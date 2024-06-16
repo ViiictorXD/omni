@@ -1,0 +1,7 @@
+bukkit {
+    name = 'Omni'
+    main = 'com.omni.minecraft.Omni'
+    version = '1.0.0'
+    authors = ['ViiictorXD']
+    website = 'https://github.com/ViiictorXD/omni'
+}
