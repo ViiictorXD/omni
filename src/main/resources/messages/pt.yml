@@ -1,0 +1,189 @@
+language:
+  name: "Português do Brasil"
+  abbreviation: "pt_BR"
+
+gm-names:
+  survival: "Sobrevivência"
+  creative: "Criativo"
+  adventure: "Aventura"
+  spectator: "Espectador"
+
+commands:
+  only-console: "&cSomente o console pode usar esse comando."
+  only-player: "&cSomente o jogador pode usar esse comando."
+  no-permission: "&cVocê não possui permissão para usar esse comando."
+  player:
+    target-not-found: "&cJogador não encontrado."
+    # TODO: Isso não deveria existir!
+    # yourself-not-found: "&cUm erro ocorreu, reentre no servidor."
+  action:
+    success: "[action] &aAção enviada."
+    success-target: "[action] &c&lALERTA: &c{0}"
+  alert:
+    usage: "&cUse '/alerta <mensagem>' para alertar todos os jogadores."
+    success-target: '&c&lALERTA: &c{0}'
+    success: "[action] &aAlerta enviado."
+  back:
+    last-location-null: "&cVocê não possui uma última localização para ir."
+    success: "[action] &aTeleportado para o lugar anterior!"
+  burn:
+    usage: "&cUse '/queimar <jogador>' para queimar um jogador."
+    cant-burn-target: "&cVocê não pode queimar outro jogador."
+    success-all: "[action] &aTodos os jogadores foram queimados."
+    success-target: "[action] &a{0} foi queimado."
+  clear:
+    usage-console: "&cUse '/limpar <jogador>' para limpar tudo de um jogador."
+    cant-clear-target: "&cVocê não pode limpar o inventário de outro jogador."
+    success-target: "[action] &a{0} teve seu inventário limpo."
+    success: "[action] &aVocê limpou seu inventário."
+  clear-chat:
+    cant-clear-target: "&cVocê não pode limpar o chat de outro jogador."
+    success-target: "[action] &a{0} teve seu chat limpo."
+    success: "[action] &aO chat foi limpo."
+  colors:
+    success: "&aCoores: &7Fazer depois *risos*"
+  compress:
+    fail: "&cNão há minérios para compactar."
+    success: "[action] &a{0} minério(s) compactado(s)!"
+  edit-item:
+    usage: "&cUse '/editaritem <nome|quantia|addlore|removerlore|addflag|removerflag> <novo valor>' para editar um item."
+    usage-name: "&cUse '/editaritem nome <nome...>' para editar o nome de um item."
+    usage-amount: "&cUse '/editaritem quantia <quantia>' para editar a quantia de um item."
+    usage-add-lore: "&cUse '/editaritem addlore <lore...>' para adicionar uma nova linha de lore."
+    usage-add-flag: "&cUse '/editaritem addflag <flag...>' para adicionar uma nova flag ao item."
+    amount-fail: "&cA quantia deve ser maior que 0."
+    add-flag-fail-1: "&cNenhum flag foi adicionada."
+    add-flag-fail-2: "&cNão foi possível adicionar as seguintes flags: {0}."
+    item-is-empty: "&cSegure o item que deseja editar."
+    name-is-empty: "&cO novo nome não pode ser vazio."
+    success-new-name: "[action] &aNovo nome definido para {0}&a."
+    success-new-amount: "[action] &aNova quantia definida para: {0}."
+    success-add-lore: "[action] &aNova linha de lore adicionada: {0}&a."
+    success-remove-lore: "[action] &aA lore foi totalmente redefinida."
+    success-add-flag: "[action] &aFlags ({0}) adicionada ao item."
+    success-remove-flag: "[action] &aAs flags foram totalmente removidas."
+  edit-sign: [] # todo: ainda vou arrumar
+  enchant:
+    usage: "&cUse '/encantar <encantamento> <nível>' para adicionar um encantamento a um item."
+    enchant-not-found: "&cEncantamento {0} encontrado. Lista de encantamentos: {1}."
+    level-fail: "&cA quantia precisa ser um número válido maior que 0."
+    item-is-empty: "&cSegure o item que deseja encantar."
+    success: "[action] &aEncantamento {0} ({1}) adicionado ao item."
+  feed:
+    usage: "&cUse '/fome <jogador>' para saciar a fome de um jogador."
+    cant-feed-target: "&cVocê não pode saciar a fome de um jogador."
+    success-target: "[action] &a{0} teve a fome saciada."
+    success: "[action] &aFome saciada."
+  fly:
+    usage: "&cUse '/voar <jogador>' para alterar o modo voar de um jogador."
+    cant-fly-target: "&cVocê não pode alterar o modo voar de um jogador."
+    success-enable-target: "[action] &a{0} teve seu modo voo ativado."
+    success-disable-target: "[action] &c{0} teve seu modo voo desativado."
+    success-enable: "[action] &aModo voo ativado."
+    success-disable: "[action] &cModo voo desativado."
+    no-permission-that-world: "&cVocê não possui permissão para voar nesse mundo."
+  gm:
+    usage: "&cUse '/gm <modo> [jogador]' para alterar o modo de jogo."
+    mode-not-found: "&cModo de jogo não encontrado."
+    usage-console: "&cUse '/gm <modo> <jogador>' para alterar o modo de jogo de um jogador."
+    cant-gm-target: "&cVocê não pode alterar o modo de jogo de um jogador."
+    target-already-that-mode: "&c{0} já está nesse modo de jogo."
+    success-target: "[action] &a{0} teve o modo de jogo alterado para {1}."
+    already-that-mode: "&c{0} você já está nesse modo de jogo."
+    success: "[action] &aModo de jogo alterado para {0}."
+  god:
+    usage: "&cUse '/deus <jogador>' para alterar o modo Deus de um jogador."
+    cant-god-target: "&cVocê não pode alterar o modo Deus de um jogador."
+    success-enable-target: "[action] &a{0} teve o modo Deus ativado."
+    success-disable-target: "[action] &c{0} teve o modo Deus desativado."
+    success-enable: "[action] &aModo Deus ativado."
+    success-disable: "[action] &cModo Deus desativado."
+  hat:
+    invalid: "&cChapéu inválido."
+    success: "[action] &aChapéu usado."
+  heal:
+    usage: "&cUse '/curar <jogador>' para curar a vida de um jogador."
+    cant-heal-target: "&cVocê não pode curar a vida de um jogador."
+    success-target: "[action] &a{0} teve sua vida curada."
+    success: "[action] &aVida curada."
+  invsee:
+    usage: "&cUse '/verinv <jogador>' para ver o inventário de um jogador."
+  kit: []
+  kit-create:
+    usage: "&cUse '/criarkit <nome>' para criar um kit."
+    already-exists: "&cUm kit com esse nome já existe."
+    success: "[action] &aKit {0} criado! Para editar, use '/editarkit {0}'."
+  light:
+    usage: "&cUse '/luz <jogador>' para ligar/desligar a luz de um jogador."
+    cant-light-target: "&cVocê não pode alterar a luz de um jogador."
+    success-enable-target: "[action] &a{0} teve a luz ligada."
+    success-disable-target: "[action] &c{0} teve a luz desligada."
+    success-enable: "[action] &aLuz ligada."
+    success-disable: "[action] &cLuz desligada."
+  melt:
+    fail: "&cNão há minérios para derreter."
+    success: "[action] &a{0} minério(s) derretido(s)!"
+  nick:
+    usage: "&cUse '/nick <nick> [jogador]' para alterar um nick."
+    usage-console: "&cUse '/nick <novo nick> <jogador>' para alterar o nick de um jogador."
+    cant-rename-target: "&cVocê não pode renomear o nick de um jogador."
+    success-target: "[action] &a{0} teve seu nick alterado para: {1}."
+    success: "[action] &aNick alterado para: {0}."
+  online:
+    success: "[action] &aJogadores online: {0}/{1}"
+  potion:
+    usage: "&cUse '/pocao <efeito> <duração> <level>' para adicionar efeito a uma poção."
+    item-is-empty: "&cSegure a poção que deseja adicionar os efeitos."
+    need-be-potion-type: "&cSegure uma poção válida."
+    effect-not-found: "&cEfeito não encontrado."
+    valid-level: "&cO level da poção precisa ser válido."
+    success: "[action] &aEfeito {0} aplicado na poção."
+  publish:
+    usage: "&cUse '/publicar <link>' para divulgar um link."
+    invalid-link: "&cO link precisa ser válido."
+    success:
+      - "[broadcast] &r"
+      - "[broadcast] &a&l{0} divulgou um link: {1}"
+      - "[broadcast] &r"
+      - "[title_all] &a&l{0}<nl>&adivulgou um link!"
+      - "[action_all] &a&l{0} divulgou um link!"
+  speed:
+    argument:
+      fly: "voar"
+      walk: "andar"
+    usage: "&cUse '/velocidade <valor> [jogador]' para alterar a velocidade."
+    usage-console: "&cUse '/velocidade <valor> <jogador>' para alterar a velocidade de um jogado."
+    cant-speed-target: "&cVocê não pode alterar a velocidade de um jogador."
+    min: "&cA velocidade mínima é 1."
+    max: "&cA velocidade máxima é {0}."
+    success: "[action] &aVelocidade de {0} alterada {1}."
+    success-target: "[action] &aVelocidade {0} de {1} foi alterada para {2}."
+  thor:
+    cant-thor-target: "&cVocê não pode jogar raio em um jogador."
+    success-all: "[action] &aTodos os jogadores sofreram raios!"
+    success-target: "[action] &a{0} foi atingido po um raio."
+    usage: "&cUse '/thor <all|jogador>' para atingir um jogador com raio."
+  title:
+    success: "[action] &aTítulo enviado."
+  tpall:
+    usage-console: "&cUse '/tpall <jogador>' para teleportar todos os jogadores para um jogador."
+    cant-tpall-target: "&cVocê não pode teleportar todos os jogadores para um jogador."
+    not-one-found: "&cNão há jogadores para teleportar."
+    success-target: "[action] &aTodos os jogadores ({1}) foram teleportados para {0}."
+    success: "[action] &aTodos os jogadores ({0}) foram teleportados para você,"
+  warps:
+    success: "[action] &a*finge que o menu foi aberto*"
+  set-warp:
+    name-cannot-be-null: "&cO nome do warp não pode ser nulo."
+    already-exists: "&cUma warp com esse nome já existe."
+    success: "[action] &aWarp {0} criada."
+  del-warp:
+    success: "[action] &aWarp {0} deletada."
+  warp:
+    usage: "&cUse '/warp <nome>' para teleportar-se para um lugar."
+    not-found: "&cWarp não encontrada."
+    success:
+      - "[action] &aTeleportado para {0}."
+      - "[title] &aTeleportado para<nl>&a{0}"
+    waiting: "[action] &aTeleportando em {0}..."
+    no-permission: "&cVocê não possui permissão para ir para a warp {0}."

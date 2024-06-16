@@ -1,0 +1,57 @@
+plugins {
+    id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'net.minecrell.plugin-yml.bukkit' version '0.6.0'
+}
+
+group = 'com.github.viiictorxd'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+
+    maven { url = uri('https://maven.elmakers.com/repository/') }
+    maven { url = uri('https://jitpack.io/') }
+
+    maven { url = uri('https://oss.sonatype.org/content/repositories/snapshots') }
+    maven { url = uri('https://repo.unnamed.team/repository/unnamed-public/') }
+}
+
+dependencies {
+    compileOnly('org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT')
+
+    implementation('com.github.SaiintBrisson.command-framework:bukkit:1.3.1')
+    implementation('com.github.cryptomorin:XSeries:9.10.0')
+
+    compileOnly('org.jetbrains:annotations:24.0.1')
+
+    compileOnly('org.projectlombok:lombok:1.18.32')
+    annotationProcessor('org.projectlombok:lombok:1.18.32')
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding('UTF-8')
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(8))
+}
+
+allprojects {
+    libsDirName('C:/Users/viiic/Dropbox/Minecraft Servers/1.8.8 Server Test/plugins')
+}
+
+bukkit {
+    name = 'Omni'
+    main = 'com.vitu.omni.Omni'
+    version = '1.0.0'
+    authors = ['ViiictorXD']
+}
+
+shadowJar {
+    relocate 'com.cryptomorin.xseries', 'com.github.viiictorxd.omni.framework.xseries'
+    relocate 'me.saiintbrisson.minecraft.command', 'com.github.viiictorxd.omni.framework.command.shared'
+    relocate 'me.saiintbrisson.bukkit.command', 'com.github.viiictorxd.omni.framework.command.bukkit'
+
+    archiveFileName = 'Omni-1.0.0.jar'
+}

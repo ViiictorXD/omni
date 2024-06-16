@@ -1,0 +1,17 @@
+# Definir a linguagem que será utilizada nas mensagens
+language: "pt"
+
+# Cite os mundos em que o modo voo é desativado
+# Para burlar essa condição, o jogador deverá possuir a permissão: "omni.fly.bypass.<world name>"
+disallowed-fly-worlds:
+  - "world"
+
+# Limite a velocidade que os jogadores possam voar/andar
+speed-limitation:
+  flying: 10
+  walking: 10
+
+# Configuração do inventário da Lixeira (comando /lixo, /lixeira)
+trash:
+  title: "Lixeira"
+  size: 6
