@@ -3,7 +3,6 @@ package com.omni.minecraft;
 import com.google.common.collect.Sets;
 import com.omni.minecraft.configuration.ConfigurationLoader;
 import com.omni.minecraft.configuration.ConfigurationProvider;
-import com.omni.minecraft.database.SqlConnection;
 import com.omni.minecraft.database.connection.SqliteConnection;
 import com.omni.minecraft.database.storage.cache.CacheManager;
 import com.omni.minecraft.executor.ExecutorHandler;

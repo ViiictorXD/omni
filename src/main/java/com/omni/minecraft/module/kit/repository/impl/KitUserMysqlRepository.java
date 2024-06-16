@@ -1,6 +1,5 @@
 package com.omni.minecraft.module.kit.repository.impl;
 
-import com.omni.minecraft.database.SqlConnection;
 import com.omni.minecraft.module.kit.data.KitUser;
 import com.omni.minecraft.module.kit.repository.KitUserRepository;
 import lombok.AllArgsConstructor;

@@ -1,0 +1,11 @@
+shadowJar {
+    relocate 'com.cryptomorin.xseries', 'com.omni.minecraft.framework.xseries'
+    relocate 'me.saiintbrisson.minecraft.command', 'com.omni.minecraft.framework.command.shared'
+    relocate 'me.saiintbrisson.bukkit.command', 'com.omni.minecraft.framework.command.bukkit'
+
+    archiveFileName = 'Omni-1.0.0.jar'
+
+    minimize()
+
+    dependsOn compileJava
+}
