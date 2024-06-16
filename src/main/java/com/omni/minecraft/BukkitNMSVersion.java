@@ -6,7 +6,7 @@ import org.bukkit.Bukkit;
 
 @Getter
 @AllArgsConstructor
-public enum Version {
+public enum BukkitNMSVersion {
 
   V1_20_5(205, "v1.20.5"),
   V1_20_4(204, "v1.20.4"),
@@ -31,11 +31,11 @@ public enum Version {
   private int versionId;
   private String simpleName;
 
-  public static Version getVersion() {
+  public static BukkitNMSVersion getVersion() {
     return directFrom(Bukkit.getVersion());
   }
 
-  public static Version directFrom(String packageName) {
+  public static BukkitNMSVersion directFrom(String packageName) {
     if (packageName.contains("1.25")) return V1_20_5;
     if (packageName.contains("1.24")) return V1_20_4;
     if (packageName.contains("1.23")) return V1_20_3;

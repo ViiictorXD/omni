@@ -7,6 +7,7 @@ plugins {
 apply {
     from 'bukkit.gradle'
     from 'libraries.gradle'
+    from 'shadow.gradle'
 }
 
 group = 'com.omni.minecraft'
@@ -26,6 +27,7 @@ dependencies {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding('UTF-8')
+    options.release = 8
 }
 
 java {
@@ -35,14 +37,4 @@ java {
 
 allprojects {
     libsDirName('C:/Users/viiic/Dropbox/Minecraft Servers/1.8.8 Server Test/plugins')
-}
-
-shadowJar {
-    relocate 'com.cryptomorin.xseries', 'com.omni.minecraft.framework.xseries'
-    relocate 'me.saiintbrisson.minecraft.command', 'com.omni.minecraft.framework.command.shared'
-    relocate 'me.saiintbrisson.bukkit.command', 'com.omni.minecraft.framework.command.bukkit'
-
-    archiveFileName = 'Omni-1.0.0.jar'
-
-    minimize()
 }

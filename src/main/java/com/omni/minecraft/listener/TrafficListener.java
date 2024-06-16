@@ -12,4 +12,5 @@ public class TrafficListener implements Listener {
 
   @EventHandler
   private void onQuit(PlayerQuitEvent event) {}
+
 }

@@ -1,7 +1,6 @@
 package com.omni.minecraft.repository;
 
 import com.omni.minecraft.api.user.User;
-import com.omni.minecraft.database.SqlConnection;
 import com.omni.minecraft.database.storage.model.named.*;
 import com.vitu.omni.database.storage.model.named.*;
 
